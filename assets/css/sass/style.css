@@ -527,14 +527,14 @@ body {
 /* Contact us */
 .blå {
   width: 1000px;
-  heigth: 200px;
+  height: 200px;
   background-color: blue;
 }
 
-.hero--banner {
+.hero {
   width: 5%;
 }
-.hero--banner .hero--bild {
+.hero .bild {
   width: 100%;
   height: auto;
   object-fit: cover;
