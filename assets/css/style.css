@@ -485,6 +485,10 @@ article#article.show .info .date-author {
 
 /*Articles SASS file*/
 /* isac test variabel test*/
+h3 {
+  font-weight: normal;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
@@ -530,8 +534,41 @@ body {
 }
 .hero .bild {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
+}
+
+.get-in-touch, .get-in-touch--columns, .get-in-touch--heading, .get-in-touch--box {
+  width: 100%;
+}
+.get-in-touch--box {
+  display: grid;
+  place-items: center;
+}
+.get-in-touch--heading {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.get-in-touch--columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 1080px;
+}
+.get-in-touch--columns .col1, .get-in-touch--columns .col2, .get-in-touch--columns .col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.get-in-touch--columns .col3 > h3 {
+  margin: 5px;
+}
+.get-in-touch--columns .linksbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*------FOOTER-----*/
