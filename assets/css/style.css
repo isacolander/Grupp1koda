@@ -525,15 +525,8 @@ body {
 }
 
 /*------FOOTER-----*/
-.footer {
+#footer {
   width: 100%;
-  display: flex;
-  justify-content:space-around;
-  
 }
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
