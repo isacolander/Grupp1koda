@@ -12,6 +12,9 @@ Version: 1.0
 /* isac test variabel test*/
 $color-pink:#ffffff;
 
+h3 {
+  font-weight: normal;
+}
 
 body {
   width: 100%;
@@ -63,8 +66,65 @@ body {
 
   .bild {
     width:100%;
-    height:500px;
+    height:400px;
     object-fit: cover;
+  }
+}
+
+.get-in-touch{
+  width:100%;
+  &--box {
+    @extend .get-in-touch;
+    display: grid;
+    place-items:center;
+  }
+
+  &--heading{
+    @extend .get-in-touch;
+    width:1080px;
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+  }
+
+  &--columns{
+    @extend .get-in-touch;
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+    width:1080px;
+    .col1,.col2,.col3{
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    /* margin runt varje child i columnerna */
+    .col3 > h3{
+      margin:5px;
+    }
+
+    .col2 > h3{
+      margin:5px;
+    }
+
+    .col1 > h3{
+      margin:5px;
+    }
+
+    .linksbox{
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap:15px;
+      transition: transform .3s ease-out;
+
+      a:hover{
+        transform: scale(120%);
+      }
+    }
+
+
   }
 }
 
