@@ -556,6 +556,7 @@ body {
   justify-content: space-between;
   padding: 40px;
   width: 1080px;
+  /* margin runt varje child i columnerna */
 }
 .get-in-touch--columns .col1, .get-in-touch--columns .col2, .get-in-touch--columns .col3 {
   display: flex;
@@ -565,10 +566,21 @@ body {
 .get-in-touch--columns .col3 > h3 {
   margin: 5px;
 }
+.get-in-touch--columns .col2 > h3 {
+  margin: 5px;
+}
+.get-in-touch--columns .col1 > h3 {
+  margin: 5px;
+}
 .get-in-touch--columns .linksbox {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  gap: 15px;
+  transition: transform 0.3s ease-out;
+}
+.get-in-touch--columns .linksbox a:hover {
+  transform: scale(120%);
 }
 
 /*------FOOTER-----*/

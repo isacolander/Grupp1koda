@@ -99,17 +99,32 @@ body {
       justify-content: flex-start;
     }
 
+    /* margin runt varje child i columnerna */
     .col3 > h3{
       margin:5px;
     }
 
+    .col2 > h3{
+      margin:5px;
+    }
 
+    .col1 > h3{
+      margin:5px;
+    }
 
     .linksbox{
       display:flex;
       justify-content: flex-end;
       align-items: flex-end;
+      gap:15px;
+      transition: transform .3s ease-out;
+
+      a:hover{
+        transform: scale(120%);
+      }
     }
+
+
   }
 }
 
