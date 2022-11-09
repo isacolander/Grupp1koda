@@ -584,8 +584,17 @@ body {
 }
 
 /*------FOOTER-----*/
-#footer {
+.footer {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#footerend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
