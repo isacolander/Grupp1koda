@@ -93,22 +93,38 @@ body {
     justify-content: space-between;
     padding:40px;
     width:1080px;
+
     .col1,.col2,.col3{
       display:flex;
       flex-direction: column;
       justify-content: flex-start;
     }
 
-    .col3 > h3{
+    .col1 > h3{
       margin:5px;
     }
 
+    .col2 > h3{
+      margin:5px;
+    }
 
+    .col3 > h3{
+      margin:5px;
+    }
 
     .linksbox{
       display:flex;
       justify-content: flex-end;
       align-items: flex-end;
+      gap:10px;
+      transition: transform .3s ease-out;
+      a:hover{
+        transform: scale(120%);
+      }
+    }
+
+    a:hover{
+
     }
   }
 }

@@ -562,6 +562,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+.get-in-touch--columns .col1 > h3 {
+  margin: 5px;
+}
+.get-in-touch--columns .col2 > h3 {
+  margin: 5px;
+}
 .get-in-touch--columns .col3 > h3 {
   margin: 5px;
 }
@@ -569,8 +575,12 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  gap: 10px;
+  transition: transform 0.3s ease-out;
 }
-
+.get-in-touch--columns .linksbox a:hover {
+  transform: scale(120%);
+}
 /*------FOOTER-----*/
 #footer {
   width: 100%;
