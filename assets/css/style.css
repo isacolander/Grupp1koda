@@ -584,6 +584,10 @@ body {
 }
 
 /*------FOOTER-----*/
+footer {
+  padding: 40px;
+}
+
 .footer {
   width: 100%;
   display: flex;
@@ -591,10 +595,15 @@ body {
   flex-wrap: wrap;
 }
 
+#footer {
+  margin: 10px 10px 20px 0px;
+}
+
 #footerend {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin: 10px 0px 20px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
