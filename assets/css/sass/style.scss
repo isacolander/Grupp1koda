@@ -169,23 +169,50 @@ body {
 }
 
 /*------FOOTER-----*/
-footer {padding: 40px}
+footer {
+	width:100%;
+	display: grid;
+	place-items:center;
+	align-items: baseline;
+
+}
 
 
 .footer {
-	width: 100%;
+	width: 80%;
 	display: flex;
-        justify-content: space-between;
-		flex-wrap:wrap;
-}
+    justify-content: space-between;
+	flex-wrap: wrap;
 
+	&--list{
+		@extend .footer;
+	width:auto;
+	}
 
-#footer {margin: 10px 10px 20px 0px;}
+	&--nav{
+		@extend .footer;
+	width:auto;
+	}
 
-#footerend {
+	&--adress{
+		@extend .footer;
+		width:auto;
+	}
+
+	&--end {
+	@extend .footer;
 	display: flex;
+	width:auto;
 	justify-content: flex-end;
-align-items: flex-end;
-margin: 10px 0px 20px 10px;
-
+	align-items: flex-end;
+	margin: 10px 0px 20px 10px;
+		
+	}
 }
+
+.footer > div {
+	margin:6px;
+	padding: 10px;
+}
+
+

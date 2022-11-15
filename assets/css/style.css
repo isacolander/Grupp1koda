@@ -628,25 +628,38 @@ body {
 
 /*------FOOTER-----*/
 footer {
-  padding: 40px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  align-items: baseline;
 }
 
-.footer {
-  width: 100%;
+.footer, .footer--end, .footer--adress, .footer--nav, .footer--list {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-#footer {
-  margin: 10px 10px 20px 0px;
+.footer--list {
+  width: auto;
 }
-
-#footerend {
+.footer--nav {
+  width: auto;
+}
+.footer--adress {
+  width: auto;
+}
+.footer--end {
   display: flex;
+  width: auto;
   justify-content: flex-end;
   align-items: flex-end;
   margin: 10px 0px 20px 10px;
+}
+
+.footer > div, .footer--list > div, .footer--nav > div, .footer--adress > div, .footer--end > div {
+  margin: 6px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
