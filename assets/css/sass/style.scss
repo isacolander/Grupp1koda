@@ -141,7 +141,23 @@ body {
 .meet-the-team-heading {
   width:80%;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.view-all-btn {
+  padding:5px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color .3s ease-in;
+}
+
+.view-all-btn:hover {
+  font-weight: bold;
+  color:white;
+  background-color:black;
+}
+
 .container {
   height: auto;
   width:80%;
@@ -149,7 +165,13 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   margin: 50px;
+  justify-content: center;
 }
+
+.container > section {
+  margin:10px;
+}
+
 .aligned {
   display: flex;
   justify-content: center;
@@ -160,7 +182,7 @@ body {
 
 /*------FOOTER-----*/
 .imgtxt {
-  flex: 1 1 16%;
+  flex: 0 1 12%;
   text-align: left;
 }
 
@@ -207,7 +229,7 @@ footer {
 	justify-content: flex-end;
 	align-items: flex-end;
 	margin: 10px 0px 20px 10px;
-		
+
 	}
 }
 
@@ -215,7 +237,10 @@ footer {
 	margin:6px;
 	padding: 10px;
 }
+<<<<<<< HEAD
 
 
 h1 {font-size: 19px;}
 h2 {font-size: 14px;}
+=======
+>>>>>>> Master

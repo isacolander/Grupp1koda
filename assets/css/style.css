@@ -596,6 +596,21 @@ body {
 .meet-the-team-heading {
   width: 80%;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-all-btn {
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in;
+}
+
+.view-all-btn:hover {
+  font-weight: bold;
+  color: white;
+  background-color: black;
 }
 
 .container {
@@ -605,6 +620,11 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   margin: 50px;
+  justify-content: center;
+}
+
+.container > section {
+  margin: 10px;
 }
 
 .aligned {
@@ -617,7 +637,7 @@ body {
 
 /*------FOOTER-----*/
 .imgtxt {
-  flex: 1 1 16%;
+  flex: 0 1 12%;
   text-align: left;
 }
 
