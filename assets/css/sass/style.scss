@@ -168,8 +168,26 @@ body {
   justify-content: center;
 }
 
+.container-2{
+  height: auto;
+  width:80%;
+  display: none;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 50px;
+  justify-content: center;
+}
+
 .container > section {
   margin:10px;
+}
+
+.container-2 > section {
+  margin:10px;
+}
+
+.show {
+  display:flex;
 }
 
 .aligned {
@@ -182,7 +200,7 @@ body {
 
 /*------FOOTER-----*/
 .imgtxt {
-  flex: 0 1 14%;
+  flex: 1 1 14%;
   text-align: left;
 }
 
@@ -238,6 +256,16 @@ footer {
 	padding: 10px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+>>>>>>> Master
 h1 {font-size: 19px;}
 h2 {font-size: 14px;}
 =======
@@ -248,3 +276,5 @@ h1 {font-size: 19px;
 h2 {font-size: 14px;
 font-family: $secondary-font ;}
 >>>>>>> dev
+
+a {font-family: $secondary-font ; }
