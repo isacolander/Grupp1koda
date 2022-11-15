@@ -664,10 +664,12 @@ footer {
 
 h1 {
   font-size: 19px;
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
