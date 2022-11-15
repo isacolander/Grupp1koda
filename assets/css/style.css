@@ -600,6 +600,19 @@ body {
   justify-content: space-between;
 }
 
+.view-all-btn {
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in;
+}
+
+.view-all-btn:hover {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
 .container {
   height: auto;
   width: 80%;
