@@ -596,6 +596,8 @@ body {
 .meet-the-team-heading {
   width: 80%;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -622,7 +624,7 @@ body {
 
 /*------FOOTER-----*/
 .imgtxt {
-  flex: 0 1 16%;
+  flex: 0 1 12%;
   text-align: left;
 }
 
