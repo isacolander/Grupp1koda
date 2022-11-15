@@ -81,7 +81,7 @@ body {
 
   &--heading{
     @extend .get-in-touch;
-    width:1080px;
+    width:80%;
     display: flex;
     flex-direction: column;
     padding:40px;
@@ -91,8 +91,10 @@ body {
     @extend .get-in-touch;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding:40px;
-    width:1080px;
+    width:80%;
+
     .col1,.col2,.col3{
       display:flex;
       flex-direction: column;
@@ -136,12 +138,12 @@ body {
 }
 
 .meet-the-team-heading {
-  width:1080px;
+  width:80%;
   margin-top: 200px;
 }
 .container {
   height: auto;
-  width:1080px;
+  width:80%;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
