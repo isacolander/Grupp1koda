@@ -237,5 +237,12 @@ footer {
 	margin:6px;
 	padding: 10px;
 }
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
 h1 {font-size: 19px;}
 h2 {font-size: 14px;}

@@ -682,6 +682,12 @@ footer {
   padding: 10px;
 }
 
+.animate-out {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
 h1 {
   font-size: 19px;
 }
