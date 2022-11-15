@@ -546,7 +546,7 @@ body {
   place-items: center;
 }
 .get-in-touch--heading {
-  width: 1080px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -554,8 +554,9 @@ body {
 .get-in-touch--columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 40px;
-  width: 1080px;
+  width: 80%;
   /* margin runt varje child i columnerna */
 }
 .get-in-touch--columns .col1, .get-in-touch--columns .col2, .get-in-touch--columns .col3 {
@@ -593,13 +594,13 @@ body {
 }
 
 .meet-the-team-heading {
-  width: 1080px;
+  width: 80%;
   margin-top: 200px;
 }
 
 .container {
   height: auto;
-  width: 1080px;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
