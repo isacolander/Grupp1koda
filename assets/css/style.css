@@ -605,6 +605,11 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   margin: 50px;
+  justify-content: center;
+}
+
+.container > section {
+  margin: 10px;
 }
 
 .aligned {
@@ -617,7 +622,7 @@ body {
 
 /*------FOOTER-----*/
 .imgtxt {
-  flex: 1 1 16%;
+  flex: 0 1 16%;
   text-align: left;
 }
 
