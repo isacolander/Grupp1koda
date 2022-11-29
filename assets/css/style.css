@@ -485,8 +485,37 @@ article#article.show .info .date-author {
 
 /*Articles SASS file*/
 /* isac test variabel test*/
+/* margin på varje text */
+h1 {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  margin: 5px 0px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 5px 0px;
+}
+
 h3 {
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 5px 0px;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  margin: 5px 0px;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -501,23 +530,6 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 1024px) {
-  /*All Devices*/
-  html.touch *:hover {
-    pointer-events: none !important;
-  }
-  html, body {
-    width: 100% !important;
-    margin: 0px !important;
-    overflow-x: hidden !important;
-    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
-  }
-  body {
-    margin: 0 0 20px;
-    height: auto;
-    min-height: 100%;
-  }
-}
 #content {
   width: 80%;
   margin: 0 auto;
@@ -555,23 +567,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 40px 0px;
   width: 80%;
-  /* margin runt varje child i columnerna */
+  border-bottom: 1px solid #CCCCCC;
 }
 .get-in-touch--columns .col1, .get-in-touch--columns .col2, .get-in-touch--columns .col3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-.get-in-touch--columns .col3 > h3 {
-  margin: 5px;
-}
-.get-in-touch--columns .col2 > h3 {
-  margin: 5px;
-}
-.get-in-touch--columns .col1 > h3 {
-  margin: 5px;
 }
 .get-in-touch--columns .linksbox {
   display: flex;
@@ -592,15 +595,20 @@ body {
   place-items: center;
   align-items: baseline;
 }
+#combine-container p {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
 
 .meet-the-team-heading {
   width: 80%;
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
 .view-all-btn {
+  font-family: "Playfair Display", serif;
   padding: 5px 20px;
   border-radius: 15px;
   font-weight: bold;
@@ -610,7 +618,8 @@ body {
 .view-all-btn:hover {
   font-weight: bold;
   color: white;
-  background-color: black;
+  background-color: #2a5db0;
+  border-color: #2a5db0;
 }
 
 .container {
@@ -619,7 +628,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
-  margin: 50px;
   justify-content: center;
 }
 
@@ -635,6 +643,16 @@ body {
 
 .container > section {
   margin: 10px;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+#our-story-text {
+  border-bottom: 1px solid #CCCCCC;
+}
+#our-story-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .container-2 > section {
@@ -672,11 +690,19 @@ footer {
   align-items: baseline;
 }
 
-.footer, .footer--end, .footer--adress, .footer--nav, .footer--list {
+#footer-div {
+  border-top: 1px solid #CCCCCC;
   width: 80%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer, .footer--end, .footer--adress, .footer--nav, .footer--list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 .footer--list {
   width: auto;
@@ -706,19 +732,24 @@ footer {
   opacity: 0;
 }
 
-ul {
-  list-style: none;
-}
-
-h1 {
-  font-size: 19px;
-}
-
-h2 {
-  font-size: 14px;
-}
-
 /* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+  /*All Devices*/
+  html.touch *:hover {
+    pointer-events: none !important;
+  }
+  html, body {
+    width: 100% !important;
+    margin: 0px !important;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+  }
+  body {
+    margin: 0 0 20px;
+    height: auto;
+    min-height: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .col1, .col2, .col3 {
     padding: 10px 0px;

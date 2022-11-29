@@ -12,8 +12,37 @@ Version: 1.0
 /* isac test variabel test*/
 $color-pink:#ffffff;
 
+/* margin på varje text */
+h1 {
+  font-size: 19px;
+  font-weight: bold;
+	font-family:$primary-font;
+  margin:5px 0px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight:500;
+  font-family: $secondary-font;
+  margin:5px 0px;
+}
+
 h3 {
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: $secondary-font;
+  margin:5px 0px;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: $primary-font;
+  margin:5px 0px;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -26,28 +55,6 @@ body {
 	font-family:$primary-font;
 	font-size:13pt;
 	color:black;
-}
-
-@media screen and (max-width : 1024px) {
-
-	/*All Devices*/
-
-	html.touch *:hover {
-    	pointer-events: none !important;
-	}
-
-	html, body {
-		width:100% !important;
-		margin:0px !important;
-		overflow-x:hidden !important;
-		-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
-	}
-
-	body {
-		margin: 0 0 20px;
-		height:auto;
-		min-height:100%;
-	}
 }
 
 #content {
@@ -92,27 +99,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:40px;
+    padding:40px 0px;
     width:80%;
+    border-bottom: 1px solid #CCCCCC;
 
     .col1,.col2,.col3{
       display:flex;
       flex-direction: column;
       justify-content: flex-start;
-    }
-
-
-    /* margin runt varje child i columnerna */
-    .col3 > h3{
-      margin:5px;
-    }
-
-    .col2 > h3{
-      margin:5px;
-    }
-
-    .col1 > h3{
-      margin:5px;
     }
 
     .linksbox{
@@ -127,6 +121,7 @@ body {
       }
     }
   }
+
 }
 
 /* meet the team */
@@ -136,16 +131,22 @@ body {
   display:grid;
   place-items:center;
   align-items: baseline;
+
+  p {
+    font-family:$primary-font;
+    font-size: 1rem;
+  }
 }
 
 .meet-the-team-heading {
   width:80%;
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
 .view-all-btn {
+  font-family: $primary-font;
   padding:5px 20px;
   border-radius: 15px;
   font-weight: bold;
@@ -155,7 +156,8 @@ body {
 .view-all-btn:hover {
   font-weight: bold;
   color:white;
-  background-color:black;
+  background-color:#2a5db0;
+  border-color: #2a5db0;
 }
 
 .container {
@@ -164,7 +166,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
-  margin: 50px;
   justify-content: center;
 }
 
@@ -180,6 +181,16 @@ body {
 
 .container > section {
   margin:10px;
+  width:100%;
+  padding: 40px 0px;
+}
+
+#our-story-text {
+    border-bottom: 1px solid #CCCCCC;
+    p {
+      font-family: $secondary-font;
+      font-weight: 400;
+    }
 }
 
 .container-2 > section {
@@ -215,15 +226,22 @@ footer {
 	display: grid;
 	place-items:center;
 	align-items: baseline;
-
 }
 
+#footer-div {
+    border-top: 1px solid #CCCCCC;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
 
 .footer {
-	width: 80%;
+	width: 100%;
 	display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 	flex-wrap: wrap;
+  align-items: flex-end;
+
 
 	&--list{
 		@extend .footer;
@@ -262,14 +280,30 @@ footer {
     opacity: 0;
 }
 
-ul {
-  list-style: none;
+/* MEDIA QUERY */
+
+@media screen and (max-width : 1024px) {
+
+	/*All Devices*/
+
+	html.touch *:hover {
+    	pointer-events: none !important;
+	}
+
+	html, body {
+		width:100% !important;
+		margin:0px !important;
+		overflow-x:hidden !important;
+		-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	}
+
+	body {
+		margin: 0 0 20px;
+		height:auto;
+		min-height:100%;
+	}
 }
 
-h1 {font-size: 19px;}
-h2 {font-size: 14px;}
-
-/* MEDIA QUERY */
 
 @media only screen and (max-width: 500px){
 
